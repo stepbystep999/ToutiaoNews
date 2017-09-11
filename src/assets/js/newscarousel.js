@@ -65,7 +65,7 @@ export default {
             this.bannerChange()
         },
 
-        focusLeave() {
+        focusOut() {
             this.bannerCircle()
         },
 
