@@ -1,0 +1,184 @@
+#newsheader {
+    background-color: red;  
+    width: 100%;
+    min-width: 1220px;
+}
+
+.topbar {
+    overflow: hidden;
+    height: 34px;
+    line-height: 34px;
+    background: #222;
+    font-size: 14px;
+    color: #fff;
+}
+
+.top-left {
+    float: left;
+    overflow: hidden;
+    height: 34px;
+}
+
+.topbar a {
+    float: left;
+    line-height: 34px;
+    border-right: 1px solid #3a3a3a;
+    padding: 0 10px;
+    color: #fff!important;
+}
+
+.weather-tool {
+    float: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.weather-abstract {
+    line-height: 34px;
+    cursor: pointer;
+    padding-left: 7px;
+}
+
+.topbar .weather-abstract {
+    color: #fff;
+}
+
+.weather-abstract span {
+    margin-right: 7px;
+}
+
+.weather-tool em {
+    font-style: normal;
+}
+
+.weather-tool .bui-icon {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-family: tticons!important;
+    display: inline-block;
+    line-height: 1;
+    speak: none;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.y-weather {
+    display: none;  
+    padding: 4px;
+    color: #444;
+    width: 220px;
+    height: 124px;
+    z-index: 1;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    box-sizing: content-box;
+    position: absolute;
+}
+
+.w-header {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.wind {
+    margin: 0 6px;
+    font-size: 13px;
+}
+
+.bui-vm {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.w-header .icon-locationweather {
+    padding-left: 5px;
+    cursor: pointer;
+    color: #406599;
+    font-size: 13px;
+}
+
+.air {
+    color: #fff;
+    background-color: rgb(92, 191, 76);
+    border-radius: 4px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 4px;
+}
+
+.days-weather {
+    margin-top: 10px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.day {
+    width: 33.3%;
+}
+
+.bui-left {
+    float: left;
+}
+
+.days-weather .title {
+    color: #999;
+    line-height: 24px;
+}
+
+.days-weather span {
+    display: block;
+    text-align: center;
+}
+
+.weather-icon {
+    margin: auto;
+    width: 48px;
+    height: 48px;
+}
+
+.temperature {
+    white-space: nowrap;
+    line-height: 24px;
+}
+
+.days-weather span {
+    display: block;
+    text-align: center;
+}
+
+.temperature em {
+    position: relative;
+    padding-right: 2px;
+}
+
+.top-right {
+    float: right;
+}
+
+.user-nav-list {
+    overflow: hidden;
+}
+
+.user-nav-list>li {
+    float: left;
+    border-right: 1px solid #3a3a3a;
+}
+
+.nav-login {
+    background-color: #ed4040;
+    width: 68px;
+    text-align: center;
+}
+
+.user-nav-list a {
+    width: 100%;
+    border-right: none;
+}
+

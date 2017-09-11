@@ -1,0 +1,77 @@
+<div id="newsheader">
+    <div class="topbar">
+        <div class="top-left">
+            <a class="download-app" href="http://app.toutiao.com/news_article/" target="_blank">下载APP</a>
+            <div class="weather-tool" @mouseover="openWeatherCard" @mouseout="closeWeatherCard">
+                <div class="weather-abstract">
+                    <span>&nbsp;{{ weathercard.city }}</span>
+                    <span class="city_state">{{ weathercard.current_condition }}</span>
+                    <span class="city_temperature">
+                        <em>{{ weathercard.low_temperature }}</em>°&nbsp; /&nbsp;
+                        <em>{{ weathercard.high_temperature }}</em>°
+                    </span>
+                    <i class="bui-icon"></i>
+                </div>
+
+                <div class="y-weather">
+                    <div class="w-header">
+                        <div class="w-header">
+                            <span ga_event="mh_change_city" class="bui-icon icon-locationweather bui-vm">&nbsp;{{ weathercard.city }}</span>
+                            <span class="wind bui-vm">{{ weathercard.wind_direction }}{{ weathercard.wind_level }}级</span>
+                            <span class="air vm" style="background-color: rgb(92, 191, 76);">{{ weathercard.quality_level }}&nbsp;{{ weathercard.aqi }}</span>
+                        </div>
+                    </div>
+
+                    <ul class="days-weather">
+                        <li class="bui-left day">
+                            <span class="title">今天</span>
+                            <div class="weather-icon weather-icon-1" :title="weathercard.tomorrow_aqi"></div>
+                            <span class="temperature">
+                                <em>{{ weathercard.low_temperature }}</em>° /
+                                <em>{{ weathercard.high_temperature }}</em>°
+                            </span>
+                        </li>
+
+                        <li class="bui-left day">
+                            <span class="title">明天</span>
+                            <div class="weather-icon weather-icon-8" :title="weathercard.tomorrow_condition"></div>
+                            <span class="temperature">
+                                <em>{{ weathercard.tomorrow_low_temperature }}</em>° /
+                                <em>{{ weathercard.tomorrow_high_temperature }}</em>°
+                            </span>
+                        </li>
+
+                        <li class="bui-left day">
+                            <span class="title">后天</span>
+                            <div class="weather-icon weather-icon-2" :title="weathercard.dat_condition"></div>
+                            <span class="temperature">
+                                <em>{{ weathercard.dat_low_temperature }}</em>° /
+                                <em>{{ weathercard.dat_high_temperature }}</em>°
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-right">
+            <ul class="user-nav-list">
+                <li class="nav-login">
+                    <a href="https://sso.toutiao.com/login/" class="tb-link">登录</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0)" class="feedback-text">反馈</a>
+                </li>
+
+                <li>
+                    <a href="https://mp.toutiao.com/profile_introduction/infringement/complain" target="blank" class="tb-link">侵权投诉</a>
+                </li>
+
+                <li>
+                    <a href="javascript:;" class="tt-dropdown-link tb-link">头条产品</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

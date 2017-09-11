@@ -1,0 +1,118 @@
+#app {
+    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, Helvetica Neue, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #657180;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+article,
+aside,
+blockquote,
+body,
+button,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+section,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.bui-icon,
+address,
+cite,
+dfn,
+em,
+i,
+var {
+    font-style: normal;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: #222;
+    background: 0 0;
+    text-decoration: none;
+    outline: 0;
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+a:visited {
+    color: #999;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+img {
+    border-style: none;
+}
+
+.container {
+    overflow: hidden;
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 16px;
+    /* min-height: 1500px; */
+}
+
+.left-nav {
+    float: left;
+    width: 110px;
+    height: 600px;
+    margin-right: 30px;
+    background-color: #fff;
+}
+
+.middle-content {
+    float: left;
+    width: 660px;
+}
+

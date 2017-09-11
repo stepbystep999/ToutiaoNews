@@ -1,0 +1,18 @@
+<div id="newscarousel">
+    <div class="slide">
+        <ul class="slide-list">
+            <li :class="slidecards[index].listClass" v-for="(slidecard, index) in slidecards" :key="slidecard.id" @mouseover="focusShow(index)" @mouseout="focusLeave">
+                <a :href='slidecard.display_url' target="_blank">
+                    <img :src='slidecard.image_url'>
+                    <p class="slide-title">{{ slidecard.title }}</p>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="slide-tab">
+            <li :class="banner[index].itemClass" v-for="(item, index) in banner" :key="item.id" @mouseover="focusShow(index)" @mouseout="focusLeave">
+                {{ item.title }}
+            </li>
+        </ul>
+    </div>
+</div>

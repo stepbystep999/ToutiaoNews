@@ -1,0 +1,51 @@
+<div id="newslist">
+    <div class="feed-infinite-wrapper">
+        <ul class="news-item-list">
+            <li class="news-item" v-for='article in articles' v-if='article.single_mode' :key='article.behot_time'>
+                <div class="single-mode">
+                    <div class="image-box">
+                        <a :href='article.source_url' target="_blank" class="img-wrap">
+                            <img :src='article.image_url'>
+                        </a>
+                    </div>
+
+                    <div class="content-box">
+                        <div class="inner-box">
+                            <div class="content-title">
+                                <a class="link" :href='article.source_url' target="_blank">{{ article.title }}</a>
+                            </div>
+
+                            <div class="content-footer">
+                                <div class="content-footer-left">
+                                    <a class="footer-bar-action tag tag-style-video" :href='article.tag_url' target="_blank">{{ article.chinese_tag }}</a>
+
+                                    <a class="footer-bar-action media-avatar" :href='article.media_url' target="_blank">
+                                        <img :src='article.media_avatar_url'>
+                                    </a>
+
+                                    <a :href='article.media_url' target="_blank" class="footer-bar-action source">&nbsp;{{ article.source }}&nbsp;⋅</a>
+
+                                    <a :href='article.comments_url' target="_blank" class="footer-bar-action source">&nbsp;{{ article.comments_count }}评论&nbsp;⋅</a>
+
+                                    <span class="footer-bar-action">&nbsp;{{ article.past_time_tag }}</span>
+                                </div>
+
+                                <div class="content-footer-right">
+                                    <div class="action-dislike">
+                                        <i class="icon-close"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            
+        </ul>
+
+        <!-- <li v-else v-bind:key='article.id'>
+            {{ article.media_avatar_url }}
+        </li>  -->
+
+    </div>
+</div>
