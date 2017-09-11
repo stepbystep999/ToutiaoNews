@@ -57,7 +57,7 @@ export default {
     },
 
     methods: {
-        focusShow(index) {
+        focusOn(index) {
             this.bannerPos = index
             if (interval) {
                 clearInterval(interval)
